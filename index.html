@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="script.js"></script>
     <title>Encryptor</title>
 </head>
 <body>
@@ -17,18 +16,19 @@
         <section>
             <div class="container">
                 <textarea class="inputArea" placeholder="Enter text here..."></textarea>
-                <button class="encryptBtn">Encrypt</button>
-                <button class="decryptBtn">Decrypt</button>
+                <button class="encryptBtn" onclick="encrypt()">Encrypt</button>
+                <button class="decryptBtn" onclick="decrypt()">Decrypt</button>
             </div>
             <div class="container">
                 <textarea class="outputArea" placeholder="Encrypted text will appear here..."></textarea>
-                <button class="copyBtn">Copy</button>
-                <button class="clearBtn">Clear</button>
+                <button class="copyBtn" onclick="copy()">Copy</button>
+                <button class="clearBtn" onclick="clear()">Clear</button>
             </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 - Encryptor by Eugenio González</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
